@@ -11,6 +11,7 @@
         <module>tests-report-model</module>
         <module>tests-report-adaptor</module>
         <module>tests-report-plugin</module>
+        <module>tests-report-example</module>
     </modules>
     <packaging>pom</packaging>
 

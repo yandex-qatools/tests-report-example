@@ -67,6 +67,14 @@
                         </plugin>
                     </reportPlugins>
                 </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>site</goal>
+                        </goals>
+                        <phase>install</phase>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
