@@ -1,0 +1,109 @@
+.case {
+	border: 1px dashed grey;
+	border-radius: 5px 5px 5px 5px;
+	margin-top: 10px;
+	padding: 5px 10px;
+}
+
+.case .title {
+	cursor: pointer;
+	margin: 0;
+}
+
+.case .title i {
+	margin-top: 9px;
+}
+
+.case.expanded .icon-chevron-right,
+.case.collapsed .icon-chevron-down {
+	display: none;
+}
+
+.case.ok .status {
+	color: #64c940;
+}
+
+.case.fail .status {
+	color: orange;
+}
+
+.case.error .status {
+	color: red;
+}
+
+.status {
+	font-weight: bold;
+	float: right;
+}
+
+.urls {
+	margin-bottom: 10px;
+}
+
+.urls a {
+	margin-right: 10px;
+}
+
+.screenshot {
+	margin-top: 5px;
+	position: relative;
+}
+
+.screenshot img {
+	border: 1px solid lightgray;
+}
+
+.screenshot img.cache {
+	display: none;
+}
+
+.screenshot-toggle {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background-color: black;
+	color: white;
+	opacity: 0;
+}
+
+.screenshot-toggle > div {
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+
+.screenshot-toggle-area {
+	display: table-cell;
+	text-align: center;
+	width: 50%;
+	height: 100%;
+
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+.screenshot-toggle .screenshot-toggle-area:first-child {
+	border-right: 2px solid white;
+}
+
+.screenshot-toggle-area > div {
+	font-weight: 800;
+	font-size: 350%;
+	text-align: center;
+}
+
+.screenshot-toggle-area > div {
+	margin-top: 40px;
+}
+
+.screenshot-toggle-area > div:first-child {
+	margin-top: 80px;
+}
+
+.case .title:hover + .urls + .screenshot .screenshot-toggle {
+	opacity: 0.5;
+}

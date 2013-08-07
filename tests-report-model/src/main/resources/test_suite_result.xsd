@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema attributeFormDefault="unqualified" elementFormDefault="unqualified"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:ns="urn:report.examples.qatools.yandex.ru"
+            targetNamespace="urn:report.examples.qatools.yandex.ru"
+            version="2.1">
+
+    <xsd:include schemaLocation="test_case_result.xsd"/>
+
+    <xsd:element name="testSuiteResult" type="ns:TestSuiteResult"/>
+
+    <xsd:complexType name="TestSuiteResult">
+        <xsd:sequence>
+            <xsd:element name="testCases" type="ns:TestCaseResult" minOccurs="0" maxOccurs="unbounded" nillable="false"/>
+        </xsd:sequence>
+        <xsd:attribute name="failed" type="xsd:int"/>
+        <xsd:attribute name="ok" type="xsd:int"/>
+    </xsd:complexType>
+
+</xsd:schema>
